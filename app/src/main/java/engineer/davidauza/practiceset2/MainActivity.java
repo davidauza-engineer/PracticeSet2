@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
      * Display methods that allow the text to appear on the screen. Don't worry if you don't know
      * how these work yet. We'll be covering them in lesson 3.
      */
-    public void display(int text) {
-        TextView t = (TextView) findViewById(R.id.display_text_view);
-        t.setText(text + "");
+    public void display(int solution) {
+        TextView t = findViewById(R.id.display_text_view);
+        t.setText(Integer.toString(solution));
     }
 
 }
