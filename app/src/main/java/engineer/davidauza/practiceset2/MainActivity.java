@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void display(int solution) {
         TextView t = findViewById(R.id.display_text_view);
-        t.setText(Integer.toString(solution));
+        t.setText(String.format(Locale.getDefault(), "%d", solution));
     }
 
 }
